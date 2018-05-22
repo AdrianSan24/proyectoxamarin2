@@ -5,10 +5,11 @@
              x:Class="App3000.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Entry  x:Name="txtnombre" Placeholder="Nombre usuario"/>
+        <Entry  x:Name="txtpass" Placeholder="Contraseña" IsPassword="True"  />
+        <Button x:Name="btnguardar" Text="Iniciar sesion"  Clicked="Click"/>
+        <Picker x:Name="picker" Title="codigo" SelectedIndexChanged="cambio"/>
+        <Entry  x:Name="txtcodigo" Placeholder="codigo maquina"/>
     </StackLayout>
 
 </ContentPage>

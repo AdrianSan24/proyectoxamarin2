@@ -1,4 +1,5 @@
-﻿using System;
+﻿#define _ANDROID_ 
+using System;
 
 using Android.App;
 using Android.Content.PM;

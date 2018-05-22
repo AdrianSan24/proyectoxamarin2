@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3000.RecogidaDatos">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="tiempo inicio" Grid.Row="0" Grid.Column="0"/>
+            <Label Text="tiempo final" Grid.Row="0" Grid.Column="1"/>
+            <Label Text="tiempo transcurrido" Grid.Row="0" Grid.Column="2"/>
+            <Entry  x:Name="txttiempo2" Placeholder="00:00" IsEnabled="false" Grid.Row="1" Grid.Column="0"/>
+            <Entry  x:Name="txttiempo3"  Placeholder="00:00" IsEnabled="false" Grid.Row="1" Grid.Column="1"/>
+            <Entry  x:Name="txttiempo" Placeholder="00:00" IsEnabled="false" Grid.Row="1" Grid.Column="2"/>
+            <Button x:Name="btnstart" Text="Inicio Parada"  Clicked="Click" Grid.Row="2" Grid.Column="0"/>
+            <Button x:Name="btnstop" Text="Fin Parada"  Clicked="Click" Grid.Row="2" Grid.Column="1"/>
+            <Button x:Name="btnguardar" Text="Guardar tiempo"  Clicked="Click" Grid.Row="2" Grid.Column="2"/>
+            <Label  x:Name="lblBandeja"  Text="Nº unidades no conformes = 0" Grid.Row="3" Grid.Column="0" />
+            <Button x:Name="btnBandeja" Text="Unidades No Conformes"  Clicked="ClickBandeja" Grid.Row="3" Grid.Column="1"/>
+            <Button x:Name="btnEnviar" Text="Enviar"  Clicked="Click" Grid.Row="3" Grid.Column="2"/>
+
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
